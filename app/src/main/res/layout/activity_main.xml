@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/simpleSwitch1"
+        android:layout_width="121dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="98dp"
+        android:layout_marginStart="26dp"
+        android:background="@drawable/toggle_switch"
+        android:switchPadding="@android:dimen/thumbnail_height"
+        android:textOff=""
+        android:textOn=""
+        android:thumb="?attr/actionBarDivider" />
+
+    <TextView
+        android:id="@+id/Textview"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="48dp"
+        android:textColor="@android:color/white" />
+
+
+    <TextView
+        android:id="@+id/subtext"
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/simpleSwitch1"
+        android:text="  "
+        android:textColor="@android:color/white" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/simpleSwitch1"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/on_off_light"
+        android:switchPadding="@android:dimen/thumbnail_height"
+        android:text="Switch"
+        android:textOff=""
+        android:textOn=""
+        android:thumb="?attr/actionBarDivider" />
+
+
+</RelativeLayout>
